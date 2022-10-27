@@ -1,13 +1,14 @@
-"# Bank-Management-System" 
-"#INFORMATION ABOUT PROJECT"
-##PROJECT NAME     : BANK ACCOUNT MANAGEMENT SYSTEM
-CREATED BY       : MD SHAFIKUL ISLAM
-LANGUAGE         : C++
-DATE OF CREATION : 22/10/2022
-PLATFORM         : WINDOWS
-SOURCE CODE		 : https://github.com/mdshafikulislam/Bank-Management-System
-TESTED ON        : WINDOWS 10
-ABOUT PROJECT    : The Bank Management System an application for keeping up
+# Bank-Management-System
+## INFORMATION ABOUT PROJECT
+## PROJECT NAME     : BANK ACCOUNT MANAGEMENT SYSTEM
+## CREATED BY       : MD SHAFIKUL ISLAM
+## LANGUAGE         : C++
+## DATE OF CREATION : 22/10/2022
+## PLATFORM         : WINDOWS
+# SOURCE CODE		 : 'https://github.com/mdshafikulislam/Bank-Management-System'
+## TESTED ON        : WINDOWS 10
+## ABOUT PROJECT    : 
+                    The Bank Management System an application for keeping up
 					an individual's record in a bank. In this basic project I attempted
 					to show the working of banking system and spread theessential
 					usefulness of a Bank Management System. It is an application

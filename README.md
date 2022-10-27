@@ -13,7 +13,7 @@ PLATFORM         : WINDOWS
 ## SOURCE CODE		 : ('https://github.com/mdshafikulislam/Bank-Management-System')
 TESTED ON        : WINDOWS 10
 ## ABOUT PROJECT    : 
-                            The Bank Management System an application for keeping up
+                                    The Bank Management System an application for keeping up
 					an individual's record in a bank. In this basic project I attempted
 					to show the working of banking system and spread theessential
 					usefulness of a Bank Management System. It is an application

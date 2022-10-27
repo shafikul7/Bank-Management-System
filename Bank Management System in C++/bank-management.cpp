@@ -3,7 +3,7 @@
 //    			STARTING A PROJECT
 //***************************************************************
 
-// header file
+//------------------------------Header File-------------------------------
 #include<iostream>
 #include <ctime>
 #include<fstream>
@@ -269,6 +269,8 @@ void forgot()
         }
 }
 
+//------------------------------Registr functions-------------------------------
+
 void registr()
 {
 
@@ -289,7 +291,7 @@ void registr()
 }
 
 
-//main function start
+//------------------------------Main functions-------------------------------
 main()
 {
 
@@ -300,9 +302,12 @@ main()
 	int choice;
         time_t now = time(0);
         char* dt = ctime(&now);
+		//------------------------------Time Display-------------------------------
         cout << "\n\t The Local Date and Time is: " << dt << endl;
+
         cout<<"\n\t                    BANK ACCOUNT MANAGEMENT SYSTEM                      \n\n";
         cout<<"\t***********************************************************************\n\n";
+		//------------------------------Login Menu-------------------------------
         cout<<"\t                      Welcome to login page                               \n\n";
         cout<<"\t******************        MENU        ********************************\n\n";
         cout<<"1.LOGIN\n";
@@ -326,7 +331,7 @@ main()
                         break;
                 case 4:
 
-                        cout<<"Thanks for using this program\nThis program is created by @Thestral9\n\n";
+                        cout<<"Thanks for using this program\nThis program is created by @Shafikul islam\n\n";
                         break;
                 default:
                         system("cls");
@@ -345,6 +350,8 @@ main()
 
 	cout<<"\t\t    BANK MANAGEMENT SYSTEM";
 	cout<<"\n\t\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
+
+//------------------------------Main Menu-------------------------------
 
 		cout<<"\t\t     ::MAIN MENU::\n";
 		cout<<"\n\t\t1. NEW Bank_Account";
@@ -404,7 +411,7 @@ main()
 
 }
 
-
+//------------------------------Create an Account functions-------------------------------
 
 void write_Bank_Account()
 {
@@ -415,6 +422,9 @@ void write_Bank_Account()
 	outFile.write(reinterpret_cast<char *> (&ac), sizeof(Bank_Account));
 	outFile.close();
 }
+
+//------------------------------Delete an Account functions-------------------------------
+
 void delete_Bank_Account(int n)
 {
 	Bank_Account ac;
@@ -442,6 +452,8 @@ void delete_Bank_Account(int n)
 	cout<<"\n\nRecord Deleted ..";
 }
 
+//------------------------------ BALANCE DETAILS functions-------------------------------
+
 void display_sp(int n)
 {
 	Bank_Account ac;
@@ -467,7 +479,7 @@ void display_sp(int n)
 		cout<<"\n\n\tBank_Account number does not exist";
 }
 
-
+//------------------------------All Account Display functions-------------------------------
 void display_all()
 {
 	system("CLS");
@@ -492,6 +504,9 @@ void display_all()
 	}
 	inFile.close();
 }
+
+//------------------------------Updating an Account functions-------------------------------
+
 void Updating_Bank_Account(int n)
 {
 	bool found=false;
@@ -522,6 +537,8 @@ void Updating_Bank_Account(int n)
 	if(found==false)
 		cout<<"\n\n\tRecord Not Found ";
 }
+
+//------------------------------Deposit functions-------------------------------
 
 void Money_Deposit_withdraw(int n, int option)
 {

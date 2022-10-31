@@ -1,9 +1,11 @@
 
 //***************************************************************
+//			BANK MANAGEMENT SYSTEM
 //    			STARTING A PROJECT
 //***************************************************************
 
 //------------------------------Header File-------------------------------
+
 #include<iostream>
 #include <ctime>
 #include<fstream>
@@ -15,35 +17,25 @@
 using namespace std;
 
 /*
+		  BANK MANAGEMENT SYSTEM
          INFORMATION ABOUT PROJECT
-PROJECT NAME     : BANK ACCOUNT MANAGEMENT SYSTEM
-CREATED BY       : MD SHAFIKUL ISLAM
+PROJECT NAME     : BANK MANAGEMENT SYSTEM
+CREATED BY       : MD.SHAFIKUL ISLAM
 LANGUAGE         : C++
 DATE OF CREATION : 22/10/2022
 PLATFORM         : WINDOWS
+University Name	 : University of Global Village(UGV)
+Department Name  : Computer Science & Engineering(CSE)
 SOURCE CODE		 : https://github.com/mdshafikulislam/Bank-Management-System
 TESTED ON        : WINDOWS 10
-ABOUT PROJECT    : The Bank Management System an application for keeping up
-					an individual's record in a bank. In this basic project I attempted
-					to show the working of banking system and spread theessential
-					usefulness of a Bank Management System. It is an application
-					that is used to maintain a customer’s account in bank. The main
-					aim of this project is to develop software for
-					BankManagementSystem. This project has been developed to
-					carry out the processes easily and quickly, which is not possible
-					with the manual systems, which are overcome by this software.
-					Our Banking Management System will give relief to both the
-					customer and employees as well. This system will be used to
-					store customer data, their cash and information as well and will
-					do transaction upon requesting. It will also keep record of each
-					transaction. We can also perform other tasks as well. For
-					example; we can add customer, we can update their record,
-					delete a customer, withdraw and transact amount and keep a
-					record of each transaction.
+
+ABOUT PROJECT    : Bank Management System is based on the concept of recording customer's account
+				   details.Here the user can perform all the tasks like creating an account, deposit amount,withdraw amount, checking balance, viewing all account holder's detail, closing an account and modify an account. There is login systems for this project.
+
 */
 
 
-//----------------------------CLASS FOR Bank-Account ---------------------------
+//----------------------------CLASS FOR Bank ---------------------------
 class Bank_Account
 {
 
@@ -163,7 +155,7 @@ void login()
         input.close();
         if(count==1)
         {
-                cout<<"\nHello"<<user<<"\nLOGIN SUCESS\nWe're glad that you're here.\nThanks for logging in\n";
+                cout<<"\nHello"<<user<<"\nLOGIN SUCCESS\nWe're glad that you're here.\nThanks for logging in\n";
                 //cin.get();
                 //cin.get();
                 //main();
@@ -274,17 +266,24 @@ void forgot()
 void registr()
 {
 
-        string reguser,regpass,ru,rp;
+        string reguser,regpass,ru,rp,regPhone,regGmail,regAddress;
         system("cls");
-        cout<<"Enter the username :";
+         cout<<"\n\t                    BANK ACCOUNT MANAGEMENT SYSTEM                      \n\n";
+		//cout<<"\nRegistr newUser"<<endl;
+        cout<<"\nEnter the username :";
         cin>>reguser;
+		cout<<"\nEnter the Mail :";
+        cin>>regGmail;
+		cout<<"\nEnter the Phone Number :";
+        cin>>regPhone;
+		cout<<"\nEnter the Address :";
+        cin>>regAddress;
         cout<<"\nEnter the password :";
         cin>>regpass;
-
         ofstream reg("database.txt",ios::app);
-        reg<<reguser<<' '<<regpass<<endl;
+        reg<<reguser<<' '<<regpass <<' '<<regGmail<<' '<<regPhone<<' '<<regAddress<<endl;
         system("cls");
-        cout<<"\nRegistration Sucessful\n";
+        cout<<"\nRegistration Successfully\n";
         main();
 
 
@@ -335,7 +334,7 @@ main()
                         break;
                 default:
                         system("cls");
-                        cout<<"Wrong Choice Intered\n"<<endl;
+                        cout<<"Wrong Choice Interned\n"<<endl;
                         main();
         }
 
@@ -589,5 +588,5 @@ void Money_Deposit_withdraw(int n, int option)
 }
 
 //***************************************************************
-//    			END OF PROJECT
+//    			END OF BANK MANAGEMENT SYSTEM PROJECT
 //***************************************************************

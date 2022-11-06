@@ -9,7 +9,7 @@
 #include<iostream>
 #include <ctime>
 #include<fstream>
-#include<istream>
+//#include<istream>
 #include<stdlib.h>
 #include<cctype>
 #include <cstring>
@@ -302,9 +302,14 @@ main()
         time_t now = time(0);
         char* dt = ctime(&now);
 		//------------------------------Time Display-------------------------------
-        cout << "\n\t The Local Date and Time is: " << dt << endl;
 
-        cout<<"\n\t                    BANK ACCOUNT MANAGEMENT SYSTEM                      \n\n";
+        cout<<"\n\t                   BANK ACCOUNT MANAGEMENT SYSTEM                     \n\n";
+		cout<<"\n\t                   University of Global Village(UGV)                  \n\n";
+        cout<<"\n\t                   Department of Computer Science & Engineering(CSE)  \n\n";
+        cout<<"\n\t                   Created By : MD.SHAFIKUL ISLAM                     \n\n";
+		cout << "\n\t The Local Date and Time is: " << dt << endl;
+
+		
         cout<<"\t***********************************************************************\n\n";
 		//------------------------------Login Menu-------------------------------
         cout<<"\t                      Welcome to login page                               \n\n";

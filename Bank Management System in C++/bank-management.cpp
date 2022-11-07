@@ -14,6 +14,7 @@
 #include<cctype>
 #include <cstring>
 #include<iomanip>
+
 using namespace std;
 
 /*
@@ -136,10 +137,12 @@ void login()
         int count;
         string user,pass,u,p;
         system("cls");
-        cout<<"please enter the following details"<<endl;
-        cout<<"USERNAME :";
+        cout<<"\n\t                   BANK ACCOUNT MANAGEMENT SYSTEM                     \n";
+        cout<<"\n\t                   Login Information Page                   \n\n";
+        cout<<"\t\t Please Enter the following details\n"<<endl;
+        cout<<"\t\t USERNAME :";
         cin>>user;
-        cout<<"PASSWORD :";
+        cout<<"\t\t PASSWORD :";
         cin>>pass;
 
         ifstream input("database.txt");
@@ -170,11 +173,14 @@ void forgot()
 {
         int ch;
         system("cls");
-        cout<<"Forgotten ? We're here for help\n";
-        cout<<"1.Search your id by username"<<endl;
-        cout<<"2.Search your id by password"<<endl;
-        cout<<"3.Main menu"<<endl;
-        cout<<"Enter your choice :";
+        cout<<"\n\t                    BANK ACCOUNT MANAGEMENT SYSTEM             \n\n";
+        cout<<"\n\t                    Forgotten Page          \n\n";
+
+        cout<<"\n\tForgotten ? We're here for help\n";
+        cout<<"\n\t 1.Search your id by username"<<endl;
+        cout<<"\n\t 2.Search your id by password"<<endl;
+        cout<<"\n\t 3.Main menu"<<endl;
+        cout<<"\n\t Enter your choice :";
         cin>>ch;
         switch(ch)
         {
@@ -182,7 +188,7 @@ void forgot()
                 {
                         int count=0;
                         string searchuser,su,sp;
-                        cout<<"\nEnter your remembered username :";
+                        cout<<"\n Enter your remembered username :";
                         cin>>searchuser;
 
                         ifstream searchu("database.txt");
@@ -268,7 +274,9 @@ void registr()
 
         string reguser,regpass,ru,rp,regPhone,regGmail,regAddress;
         system("cls");
-         cout<<"\n\t                    BANK ACCOUNT MANAGEMENT SYSTEM                      \n\n";
+         cout<<"\n\t                    BANK ACCOUNT MANAGEMENT SYSTEM             \n\n";
+        cout<<"\n\t                     Registration Information Page          \n";
+        cout<<"\n\t                     Please Enter the following details\n";
 		//cout<<"\nRegistr newUser"<<endl;
         cout<<"\nEnter the username :";
         cin>>reguser;
@@ -303,22 +311,22 @@ main()
         char* dt = ctime(&now);
 		//------------------------------Time Display-------------------------------
 
-        cout<<"\n\t                   BANK ACCOUNT MANAGEMENT SYSTEM                     \n\n";
-		cout<<"\n\t                   University of Global Village(UGV)                  \n\n";
-        cout<<"\n\t                   Department of Computer Science & Engineering(CSE)  \n\n";
+        cout<<"\n\t                   BANK ACCOUNT MANAGEMENT SYSTEM                     \n";
+		cout<<"\n\t                   University of Global Village(UGV)                  ";
+        cout<<"\n\t                   Department of Computer Science & Engineering(CSE)  ";
         cout<<"\n\t                   Created By : MD.SHAFIKUL ISLAM                     \n\n";
 		cout << "\n\t The Local Date and Time is: " << dt << endl;
 
-		
+
         cout<<"\t***********************************************************************\n\n";
 		//------------------------------Login Menu-------------------------------
         cout<<"\t                      Welcome to login page                               \n\n";
         cout<<"\t******************        MENU        ********************************\n\n";
-        cout<<"1.LOGIN\n";
-        cout<<"2.REGISTER\n";
-        cout<<"3.FORGOT PASSWORD (or) USERNAME\n";
-        cout<<"4.Exit\n";
-        cout<<"\nEnter your choice : ";
+        cout<<"\t 1.LOGIN\n";
+        cout<<"\t 2.REGISTER\n";
+        cout<<"\t 3.FORGOT PASSWORD (or) USERNAME\n";
+        cout<<"\t 4.Exit\n";
+        cout<<"\t\nEnter your choice : ";
         cin >> choice;
         cout<<endl;
 
@@ -404,7 +412,7 @@ main()
 			break;
 		 case '8':
 		 	system("CLS");
-			cout<<"\n\n\tBrought To You By code-projects.org";
+			cout<<"\n\n\t Exit the program Thanks for using this program\n\tThis program is created by @Shafikul islam";
 			break;
 		 default :cout<<"\a";
 		}

@@ -326,7 +326,7 @@ main()
         cout<<"\t 2.REGISTER\n";
         cout<<"\t 3.FORGOT PASSWORD (or) USERNAME\n";
         cout<<"\t 4.Exit\n";
-        cout<<"\t\nEnter your choice : ";
+        cout<<"\t\n Enter your choice : ";
         cin >> choice;
         cout<<endl;
 
@@ -342,8 +342,10 @@ main()
                         forgot();
                         break;
                 case 4:
+                        system("CLS");
 
-                        cout<<"Thanks for using this program\nThis program is created by @Shafikul islam\n\n";
+                        cout<<"Thanks for using this program This program is created by @Shafikul islam\n\n";
+                        main();
                         break;
                 default:
                         system("cls");
@@ -356,25 +358,32 @@ main()
 	do
 	{
 
-	system("CLS");
-    cout << "\n\t The Local Date and Time is: " << dt << endl;
-	cout<<"\n\t\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
+        system("CLS");
+    //cout << "\n\t The Local Date and Time is: " << dt << endl;
 
-	cout<<"\t\t    BANK MANAGEMENT SYSTEM";
-	cout<<"\n\t\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
+        cout<<"\n\t\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+        cout<<"\n\t         BANK MANAGEMENT SYSTEM                     \n";
+		cout<<"\n\t         University of Global Village(UGV)                  ";
+        cout<<"\n\t         Department of Computer Science & Engineering(CSE)  ";
+        cout<<"\n\t         Created By : MD.SHAFIKUL ISLAM             \n\n";
+        //cout<<"\n\t\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
 
 //------------------------------Main Menu-------------------------------
+        //system("Color 0A");
+		cout<<"\t         ::MAIN MENU BANK MANAGEMENT SYSTEM::\n";
+		cout<<"\n\t\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
 
-		cout<<"\t\t     ::MAIN MENU::\n";
-		cout<<"\n\t\t1. NEW Bank_Account";
-		cout<<"\n\t\t2. Money_Deposit Total-Money";
-		cout<<"\n\t\t3. WITHDRAW Total-Money";
-		cout<<"\n\t\t4. BALANCE ENQUIRY";
-		cout<<"\n\t\t5. ALL Bank_Account HOLDER LIST";
-		cout<<"\n\t\t6. CLOSE AN Bank_Account";
-		cout<<"\n\t\t7. Updating AN Bank_Account";
-		cout<<"\n\t\t8. EXIT";
-		cout<<"\n\n\t\tSelect Your Option (1-8): ";
+        //system("Color 16");
+		cout<<"\n\t\t 1. NEW Bank_Account";
+		cout<<"\n\t\t 2. Money_Deposit Total-Money";
+		cout<<"\n\t\t 3. WITHDRAW Total-Money";
+		cout<<"\n\t\t 4. BALANCE ENQUIRY";
+		cout<<"\n\t\t 5. ALL Bank_Account HOLDER LIST";
+		cout<<"\n\t\t 6. CLOSE AN Bank_Account";
+		cout<<"\n\t\t 7. Updating AN Bank_Account";
+		cout<<"\n\t\t 8. EXIT";
+		//system("Color DE");
+		cout<<"\n\n\t\t Select Your Option (1-8): ";
 		cin>>ch;
 
 		switch(ch)
@@ -439,6 +448,7 @@ void write_Bank_Account()
 
 void delete_Bank_Account(int n)
 {
+    //system("Color DE");
 	Bank_Account ac;
 	ifstream inFile;
 	ofstream outFile;
@@ -503,7 +513,7 @@ void display_all()
 		cout<<"File could not be open !! Press any Key...";
 		return;
 	}
-	cout<<"\n\n\t\t Bank_Account HOLDER LIST\n\n";
+	cout<<"\n\n\t\t Bank Account HOLDER LIST\n\n";
 	cout<<"\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
 	cout<<"\t\t A/c no.      NAME           Type  Balance\n";
 	cout<<"\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";

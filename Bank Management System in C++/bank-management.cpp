@@ -36,7 +36,7 @@ ABOUT PROJECT    : Bank Management System is based on the concept of recording c
 */
 
 
-//----------------------------CLASS FOR Bank ---------------------------
+//---------------------------- CLASS FOR Bank_Account ---------------------------
 class Bank_Account
 {
 
@@ -326,6 +326,7 @@ main()
         cout<<"\t 2.REGISTER\n";
         cout<<"\t 3.FORGOT PASSWORD (or) USERNAME\n";
         cout<<"\t 4.Exit\n";
+
         cout<<"\t\n Enter your choice : ";
         cin >> choice;
         cout<<endl;
@@ -449,6 +450,7 @@ void write_Bank_Account()
 void delete_Bank_Account(int n)
 {
     //system("Color DE");
+
 	Bank_Account ac;
 	ifstream inFile;
 	ofstream outFile;
@@ -505,6 +507,7 @@ void display_sp(int n)
 void display_all()
 {
 	system("CLS");
+
 	Bank_Account ac;
 	ifstream inFile;
 	inFile.open("Bank_Account.dat",ios::binary);
@@ -513,6 +516,7 @@ void display_all()
 		cout<<"File could not be open !! Press any Key...";
 		return;
 	}
+	cout<<"\n\t         BANK ACCOUNT MANAGEMENT SYSTEM                     \n";
 	cout<<"\n\n\t\t Bank Account HOLDER LIST\n\n";
 	cout<<"\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
 	cout<<"\t\t A/c no.      NAME           Type  Balance\n";
@@ -582,8 +586,8 @@ void Money_Deposit_withdraw(int n, int option)
 			ac.Display_Account();
 			if(option==1)
 			{
-				cout<<"\n\n\tTO Money_DepositSS Total-Money";
-				cout<<"\n\n\tPlease Enter The Total-Money to be Money_Deposited: ";
+				cout<<"\n\n\t TO Money_DepositSS Total-Money";
+				cout<<"\n\n\t Please Enter The Total-Money to be Money_Deposited: ";
 				cin>>amt;
 				ac.dep(amt);
 			}

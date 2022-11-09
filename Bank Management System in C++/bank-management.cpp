@@ -9,7 +9,6 @@
 #include<iostream>
 #include <ctime>
 #include<fstream>
-//#include<istream>
 #include<stdlib.h>
 #include<cctype>
 #include <cstring>
@@ -394,17 +393,20 @@ main()
 			break;
 		case '2':
 			system("CLS");
-			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; cin>>num;
+			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; 
+			cin>>num;
 			Money_Deposit_withdraw(num, 1);
 			break;
 		case '3':
 			system("CLS");
-			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; cin>>num;
+			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; 
+			cin>>num;
 			Money_Deposit_withdraw(num, 2);
 			break;
 		case '4':
 			system("CLS");
-			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; cin>>num;
+			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; 
+			cin>>num;
 			display_sp(num);
 			break;
 		case '5':
@@ -412,12 +414,14 @@ main()
 			break;
 		case '6':
 			system("CLS");
-			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; cin>>num;
+			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; 
+			cin>>num;
 			delete_Bank_Account(num);
 			break;
 		 case '7':
 		 	system("CLS");
-			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; cin>>num;
+			cout<<"\n\n\tPlease Enter The Bank_Account No. : "; 
+			cin>>num;
 			Updating_Bank_Account(num);
 			break;
 		 case '8':
@@ -603,7 +607,7 @@ void Money_Deposit_withdraw(int n, int option)
 					ac.draw(amt);
 		      }
 			int pos=(-1)*static_cast<int>(sizeof(ac));
-			File.seekp(pos,ios::cur);//fn1353
+			File.seekp(pos,ios::cur);
 			File.write(reinterpret_cast<char *> (&ac), sizeof(Bank_Account));
 			cout<<"\n\n\tRecord Updated";
 			found=true;

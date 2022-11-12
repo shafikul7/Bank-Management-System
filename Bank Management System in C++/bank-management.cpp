@@ -9,9 +9,9 @@
 #include<iostream>
 #include <ctime>
 #include<fstream>
-#include<stdlib.h>
+//#include<stdlib.h>
 #include<cctype>
-#include <cstring>
+#include<cstring>
 #include<iomanip>
 
 using namespace std;
@@ -44,7 +44,7 @@ class Bank_Account
 	int acno;
 	char name[70];
 public:
-
+	// Method/function declaration
 	void report() const;
 	int retMoney_Deposit() const;
 	void create_Bank_Account();
@@ -57,6 +57,7 @@ public:
 };
 
 int main();
+// Method/function definition outside the class
 void Bank_Account::Updation()
 {
 	cout<<"\n\t Bank Account No. : "<<acno;
@@ -158,8 +159,6 @@ void login()
         if(count==1)
         {
                 cout<<"\nHello"<<user<<"\nLOGIN SUCCESS\nWe're glad that you're here.\nThanks for logging in\n";
-                //cin.get();
-                //cin.get();
                 //main();
         }
         else

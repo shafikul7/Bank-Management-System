@@ -9,7 +9,7 @@
 #include<iostream>
 #include <ctime>
 #include<fstream>
-//#include<stdlib.h>
+#include<stdlib.h>
 #include<cctype>
 #include<cstring>
 #include<iomanip>
